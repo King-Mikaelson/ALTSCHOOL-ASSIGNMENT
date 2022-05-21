@@ -125,6 +125,10 @@ header ul li a{
     color:black
 }
 
+header ul li a:hover{
+    border-bottom: 3px solid royalblue;
+ }
+
 @media (max-width: 800px){
     
     header ul {

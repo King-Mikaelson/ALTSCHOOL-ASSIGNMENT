@@ -87,11 +87,11 @@ header nav{
 
 header ul {
     height: 100px;
-    background-color: red;
-    background-image: linear-gradient(to right, Red , Orange, Yellow, Green, Blue, Indigo, Violet);
+    background-color:white;
     position: fixed;
     width:100%;
     margin: 0 auto;
+    color: black
 }
 
 header ul {
@@ -111,7 +111,13 @@ header ul li a{
     text-decoration: none;
     font-size:1.5rem;
     font-weight: 1.2rem;
-    color: white
+    color: black
+}
+
+
+
+header ul li a:hover{
+   border-bottom: 3px solid royalblue;
 }
 
 @media (max-width: 800px){
