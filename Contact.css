@@ -157,7 +157,7 @@ header ul li a:hover{
     flex-direction: column;
     min-height: 100vh;
     position: relative;
-    padding: 50px 100px;
+    padding: 60px 100px;
     /* background: url(https://i.pinimg.com/originals/f6/f1/f6/f6f1f6d588f82ea2dee99af24a8d4215.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -173,6 +173,7 @@ header ul li a:hover{
    font-size: 36px;
    font-weight: 700;
    color:white;
+   margin-top: 2.5rem;
 
 }
 
@@ -239,6 +240,72 @@ header ul li a:hover{
     width: 100%;
     margin-top: 10px;
 }
+
+.contactForm .inputText input,
+.contactForm .inputText textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px  solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputText span {
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 1rem;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666
+}
+
+.contactForm .inputText input:focus ~ span,
+.contactForm .inputText textarea:focus ~ span,
+.contactForm .inputText input:valid ~ span,
+.contactForm .inputText textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 0.75rem;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputText input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    border: none;
+    cursor: none;
+    padding: 10px;
+    font-size: 1.125rem;
+}
+
+.contactForm .inputText.drop-down{
+    margin: 20px 0;
+}
+
+
+@media (max-width: 991px){
+    .main{
+        padding: 50px
+    }
+
+    .main-two {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .contactForm {
+        width: 100%;
+        padding: 50px;
+        background: white;
+    }
+}
+
 
 
 
