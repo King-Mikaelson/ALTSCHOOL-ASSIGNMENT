@@ -156,12 +156,12 @@ header ul li a:hover{
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    position: relative;
+    /* position: relative; */
     padding: 60px 100px;
-    /* background: url(https://i.pinimg.com/originals/f6/f1/f6/f6f1f6d588f82ea2dee99af24a8d4215.jpg);
+    background: url(https://i.pinimg.com/originals/f6/f1/f6/f6f1f6d588f82ea2dee99af24a8d4215.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center; */
+    background-position:center;
 }
 
 .main .main-heading {
@@ -213,9 +213,9 @@ header ul li a:hover{
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: white;
+    color: black;
     flex-direction: column;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .main-two .info .box .text h3 {
@@ -227,6 +227,7 @@ header ul li a:hover{
     width: 40%;
     padding: 40px;
     background: white;
+    opacity: 0.8;
 }
 
 .contactForm h2{
@@ -286,8 +287,11 @@ header ul li a:hover{
     margin: 20px 0;
 }
 
+ @media (max-width: 991px){
 
-@media (max-width: 991px){
+    header{
+        display:none
+    }
     .main{
         padding: 50px
     }
@@ -299,11 +303,15 @@ header ul li a:hover{
     }
 
 
-    .contactForm {
+    .main .info, .contactForm {
         width: 100%;
-        padding: 50px;
-        background: white;
+
     }
+
+    .main .info{
+        margin-bottom: 40px;
+    }
+
 }
 
 
