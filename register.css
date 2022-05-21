@@ -190,7 +190,9 @@ header ul li a:hover{
 
 form .input-field .input-text {
     margin-bottom: 5px;
-    width: calc(100% / 2 - 20px)
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    margin-top: 40px;
 }
 
 .input-field .input-text .info {
@@ -201,7 +203,8 @@ form .input-field .input-text {
 
 
 .input-field .input-text input {
-    height: 45px;
+    position: absolute;
+    height: 150%;
     width: 100%;
     outline: none;
     border-radius: 5px;
@@ -210,6 +213,29 @@ form .input-field .input-text {
     font-size: 16px;
     border-bottom-width: 5px;
     transition: all 0.5s ease-in-out;
+}
+
+.input-field .input-text span {
+    margin-left: 2rem;
+}
+
+.input-field .input-text i {
+    position: absolute;
+    /* top: 0;
+    bottom:0; */
+}
+
+.input-field .input-text i.icon {
+    top:0;
+    left: 0;
+    
+}
+
+
+.input-field .input-text i.showHidePw {
+    top: 15;
+    right: 0;
+    
 }
 
 
