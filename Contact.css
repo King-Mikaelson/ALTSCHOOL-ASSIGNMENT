@@ -1,0 +1,55 @@
+/* --------------*/
+/*General Resets */
+/* --------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+/* Ressetting margins of elements */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+    margin : 0
+}
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p{
+   font-weight: 400;
+}
+
+/* Setting up our body */
+body {
+    min-height: 100vh;
+}
+
+/* Making Images easier to easier to style */
+img,
+picture {
+max-width: 100%;
+display: block; 
+}
+
+/* Making forms easier to work with */
+input,
+button,
+text-area,
+select {
+    font : inherit
+}

@@ -1,0 +1,290 @@
+/* --------------*/
+/*General Resets */
+/* --------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Ressetting margins of elements */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+    margin: 0
+}
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p {
+    font-weight: 100;
+}
+
+/* Setting up our body */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    overflow: hidden;
+}
+
+/* Making Images easier to easier to style */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Making forms easier to work with */
+input,
+button,
+text-area,
+select {
+    font: inherit
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Removing list styles on ul,ol elements */
+ul[role="list"],
+li[role="list"] {
+    list-style: none;
+}
+
+header {
+    top: 0;
+    position: fixed;
+
+
+}
+
+header nav {
+    top: 0;
+    position: fixed;
+}
+
+header ul {
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    color: black
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding-left: 60vw;
+    padding-top: 2rem;
+    flex-wrap: wrap
+}
+
+header ul li {
+    flex-grow: 1;
+    padding-left: 0rem;
+    color: black
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 1.2rem;
+    color: black
+}
+
+@media (max-width: 800px) {
+
+    header ul {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 3rem;
+
+    }
+
+    header ul li {
+        padding-bottom: 2rem;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+
+    }
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+
+}
+
+.main .form {
+    max-width: 700px;
+    background-color: white;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 10px;
+
+}
+
+.main .heading {
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+
+}
+
+.main .heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: purple;
+}
+
+.main form .input-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0px 12px 0;
+}
+
+form .input-field .input-text {
+    margin-bottom: 5px;
+    width: calc(100% / 2 - 20px)
+}
+
+.input-field .input-text .info {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+
+.input-field .input-text input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.input-field .input-text input:focus,
+.input-field .input-text input:valid {
+    border-color: #9b59b6
+}
+
+form .input-text .gender {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form .input-text .gender option {
+    font-size: 16px;
+}
+
+/* STYLING A BUTTON FOR FUTURE REFRENCES */
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+    margin-bottom: 0px
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+form .button input:hover {
+    background: linear-gradient(-150deg, #71b7e6, #9b59b6);
+}
+
+@media (max-width:584px) {
+    .main .form {
+        max-width: 70%;
+        background-color: white;
+        width: 100%;
+        padding: 25px 30px;
+        border-radius: 10px;
+
+    }
+
+
+    .main form .input-field {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 20px 0px 12px 0;
+    }
+
+    form .input-field .input-text {
+        margin-bottom: 5px;
+        width: 100%
+    }
+
+    .main form .input-field {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+
+    header {
+        display:none
+    
+    
+    }
+
+
+
+
+
+
+}

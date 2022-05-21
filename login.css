@@ -1,0 +1,296 @@
+
+/* --------------*/
+/*General Resets */
+/* --------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Ressetting margins of elements */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+    margin : 0
+}
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p{
+   font-weight: 100;
+}
+
+/* Setting up our body */
+body {
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+/* Making Images easier to easier to style */
+img,
+picture {
+max-width: 100%;
+display: block; 
+}
+
+/* Making forms easier to work with */
+input,
+button,
+text-area,
+select {
+    font : inherit
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Removing list styles on ul,ol elements */
+ul[role = "list"],
+li[role="list"] {
+    list-style: none;
+}
+
+.container{
+    position: relative;
+    width:100%;
+   
+}
+
+header{
+    top:0;
+    position: fixed;
+    
+
+}
+
+header nav{
+    top:0;
+    position: fixed;
+}
+
+header ul {
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    width:100%;
+    margin: 0 auto;
+    color:black
+}
+
+header ul {
+    display: flex;
+    list-style:none;
+    padding-left: 60vw;
+    padding-top:2rem;
+    flex-wrap: wrap
+}
+
+header ul li {
+    flex-grow: 1;
+    padding-left: 0rem;
+    color:black
+}
+
+header ul li a{
+    text-decoration: none;
+    font-size:1.5rem;
+    font-weight: 1.2rem;
+    color:black
+}
+
+@media (max-width: 800px){
+    
+    header ul {
+        display: block;
+        height: auto;
+        text-align:center;
+        padding-left: 0;
+        padding-top: 3rem;
+
+    }
+
+    header ul li {
+        padding-bottom: 2rem;
+        margin: 0 auto;
+        text-align:center;
+        width:100%;
+
+    }
+}
+
+.main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   
+}
+
+.container .form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow:0 5px 10px rgba(0,0,0, 0.1);
+    width: 30%
+}
+
+.container .form .heading {
+    position: relative;
+    font-size: 1.68rem;
+    font-weight: 700;
+}
+
+
+.form .heading::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height:3px;
+    width: 40px;
+    background-color: brown;
+}
+
+.form .input-field{
+    margin-top: 30px;
+    position: relative;
+    height:50px;
+    width:100%
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 35px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.3s ease;
+
+}
+
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: turquoise
+
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: brown;
+}
+
+
+.input-field input:is(:focus, :valid) ~ i {
+   color : turquoise
+
+}
+
+.input-field i.icon {
+    left:0
+}
+
+.input-field i.showHidePw {
+    right:0
+}
+
+.form .checkbox-text {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkbox-main input {
+    margin: 0 8px -2px 4px
+    /* accent-color: auto; */
+}
+
+.form .text{
+    color: brown;
+    font-size: 0.875rem
+}
+
+.form a.text{
+    color:blueviolet;
+    text-decoration: none;
+}
+
+
+.form a:hover{
+    text-decoration: underline
+}
+
+.form .button{
+    margin-top: 35px
+
+}
+
+.form .button input{
+    border:none;
+    background-color: blueviolet;
+    color:white;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    font-size : 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+}
+
+.button input:hover{
+    background-color: #8a8a8a;
+}
+
+.form .signup-main{
+    margin-top:30px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
