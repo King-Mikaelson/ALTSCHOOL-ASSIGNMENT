@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculator-flex.css">
     <title>ALTSCHOOL CALCULATOR</title>
 </head>
 <body>
-    <h1 style="font-size: 5rem;"> OH OH, A CALCULATOR IS MEANT TO BE HERE, WHAT HAPPENED?</h1>
+    <div class="calculator-main">
+        <div class="header">
+            <h1 class="title">calc</h1>
+        </div>
+
+        <div class="calculator-flex">
+            <div class="output">
+                <div class="previous-calculation" calc-previous-number></div>
+                <div class="current-calculation" calc-current-number></div>
+            </div>
+
+
+            <div class="button-colour">
+                <button class="calc-buttons" calc-number>7</button>
+                <button class="calc-buttons" calc-number>8</button>
+                <button class="calc-buttons" calc-number >9</button>
+                <button class="calc-buttons color" calc-delete>DEL</button>
+                <button class="calc-buttons" calc-number>4</button>
+                <button class="calc-buttons" calc-number>5</button>
+                <button class="calc-buttons" calc-number>6</button>
+                <button class="calc-buttons" calc-operation>+</button>
+                <button class="calc-buttons" calc-number>1</button>
+                <button class="calc-buttons" calc-number>2</button>
+                <button class="calc-buttons" calc-number>3</button>
+                <button class="calc-buttons" calc-operation>-</button>
+                <button class="calc-buttons" calc-number>.</button>
+                <button class="calc-buttons" calc-number>0</button>
+                <button class="calc-buttons" calc-operation>/</button>
+                <button class="calc-buttons" calc-operation>x</button>
+                <button class="span-two color" calc-reset>RESET</button>
+                <button class="span-two equals" calc-equals>=</button>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
     
 </body>
 </html>
