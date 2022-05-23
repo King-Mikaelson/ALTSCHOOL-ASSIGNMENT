@@ -143,7 +143,7 @@ nav ul a:hover{
 
 .nav-link-calc{
     background-color: crimson;
-    color:black;
+    color:white;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -168,6 +168,7 @@ nav ul a:hover{
    font-weight: 700;
    margin-top: 1.5rem;
    margin-bottom: 0.94rem;
+   letter-spacing: 0.3rem;
 
 }
 
@@ -182,6 +183,7 @@ nav ul a:hover{
     font-weight: 400;
     margin-top: 1.5rem;
     margin-bottom: 0.94rem;
+    letter-spacing: 0.5rem;
  
  }
  
@@ -194,7 +196,8 @@ nav ul a:hover{
     margin-bottom: 0.94rem;
     word-wrap: break-word;
     word-break: break-all;
-    padding-right: 39rem
+    padding-right: 34.6rem;
+    letter-spacing: 0.2rem;
 
 }
 
