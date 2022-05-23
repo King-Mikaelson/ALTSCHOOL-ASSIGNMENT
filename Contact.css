@@ -289,11 +289,12 @@ header ul li a:hover{
 
  @media (max-width: 991px){
 
-    header{
+    /* header{
         display:none
-    }
+    } */
     .main{
-        padding: 50px
+        padding: 50px;
+        margin-top: 15rem;
     }
 
     .main-two {
