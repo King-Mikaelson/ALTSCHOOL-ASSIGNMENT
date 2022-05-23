@@ -97,14 +97,13 @@ header ul {
 header ul {
     display: flex;
     list-style:none;
-    padding-left: 60vw;
     padding-top:2rem;
     flex-wrap: wrap
 }
 
 header ul li {
     flex-grow: 1;
-    padding-left: 0rem
+    padding-left: 2rem
 }
 
 header ul li a{
@@ -147,7 +146,7 @@ header ul li a:hover{
     color:white
 }
 
-/* .image{
+.image{
     height: 100rem;
     width: 100%;
 }
@@ -155,7 +154,7 @@ header ul li a:hover{
 
 img{
     height : 41.5rem;
-    width:50%;
+    max-width:50%;
     margin-left: 5rem;
-} */
+}
 

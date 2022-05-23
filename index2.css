@@ -1,0 +1,239 @@
+/* --------------*/
+/*General Resets */
+/* --------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Ressetting margins of elements */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+    margin: 0
+}
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p {
+    font-weight: 100;
+    font-family: 'Anton', sans-serif;
+    /* font-family: 'Kanit', sans-serif; */
+}
+
+/* Setting up our body */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    overflow: hidden;
+}
+
+/* Making Images easier to easier to style */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Making forms easier to work with */
+input,
+button,
+text-area,
+select {
+    font: inherit
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Removing list styles on ul,ol elements */
+ul[role="list"],
+li[role="list"] {
+    list-style: none;
+}
+
+header {
+    background-color: white;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+
+
+.AboutMe{
+    background-image: url(https://wallpaper.dog/large/961978.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: whitesmoke;
+    position: relative;
+}
+
+.logo{
+    color: crimson;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.click{
+    color:darkred;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 4rem
+    /* display: inline-block;
+    padding: 10px 25px; */
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+nav ul a:hover{
+   color: crimson;
+   transition: .4s;
+}
+
+.nav-link-calc{
+    background-color: crimson;
+    color:black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: transform .4s;
+}
+
+.nav-link-calc:hover{
+    transform: scale(1.1);
+}
+
+
+.heading{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+
+.heading h1{
+   font-size: 50px;
+   font-weight: 700;
+   margin-top: 1.5rem;
+   margin-bottom: 0.94rem;
+
+}
+
+.heading h1 span{
+    font-size: 60px;
+    color: crimson;
+ 
+}
+
+.heading h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    margin-bottom: 0.94rem;
+ 
+ }
+ 
+
+.heading p {
+     font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    margin-bottom: 0.94rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding-right: 39rem
+
+}
+
+.btn{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    background-color: crimson;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    color: whitesmoke;
+    transition: transform 0.3s;
+    box-shadow: 7px 10px 30px darkred ;
+}
+
+.btn:hover {
+    transform:translate(10%, 40%);
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.arrow:hover {
+    transform:translateY(40%);
+}
+
+.image{
+    max-width: 100%;
+    position: absolute;
+}
+
+img{
+    height: 80%;
+    position: absolute;
+    bottom: 12px;
+    right: 160px;
+    border-radius: 0.5rem;
+    opacity: 0.7;
+}
